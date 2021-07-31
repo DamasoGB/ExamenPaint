@@ -1,14 +1,26 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Figura corazon = new Corazon();
-        Figura rayo = new Rayo();
-        Figura estrella = new Estrella();
-
+        Servicio servicio = new Servicio();
         Lienzo lienzo = new Lienzo();
         
+        
+        Figura figura1 = servicio.createShape("corazon");
+        lienzo.Add(figura1, new Rectangulo(new Point(15, 56),new Point(87, 90)));
+        figura1.setColorFondo("Rojo");
+        figura1.setColorBordes("Negro");
 
-        lienzo.Add(corazon, new Rectangulo(new Point(15, 56),new Point(87, 90)));
-        lienzo.Add(rayo,  new Rectangulo(new Point(53, 84),new Point(120, 145)));
-        lienzo.Add(estrella,  new Rectangulo(new Point(23, 12),new Point(35, 68)));
+        Figura figura2 = servicio.createShape("rayo");
+        lienzo.Add(figura2,  new Rectangulo(new Point(53, 84),new Point(120, 145)));
+        figura2.setColorFondo("Amarillo");
+        figura2.setColorBordes("Negro");
+        
+        Figura figura3 = servicio.createShape("estrella");
+        lienzo.Add(figura3,  new Rectangulo(new Point(23, 12),new Point(35, 68)));
+        figura3.setColorBordes("Amarillo");
+
+        Figura figuraSeleccionada = figura1.getSelected(new Point(20, 62),lienzo.figuras);
+
+        
+        System.out.println("Figura seleccionada: "+figuraSeleccionada.getForma()+"\nColor Fondo: "+figuraSeleccionada.getColorFondo()+"\nColor Bordes: "+figuraSeleccionada.getColorBordes());
     }
 }

@@ -1,12 +1,13 @@
 public class Servicio {
-    public IFigura createShape(Figura figura){
-        Figuras figuras= Figuras.Corazon;
-        if(figuras==Figuras.Rayo){
-            return figura;
-        }else if (figuras==Figuras.Corazon){
-            return figura;
-        }else if (figuras==Figuras.Estrella){
-            return figura;
+    public Figura createShape(String figura){
+        figura = figura.toUpperCase();
+        
+        if(figura.equals(Figuras.RAYO.name())){
+            return new Rayo();
+        }else if (figura.equals(Figuras.CORAZON.name())){
+            return new Corazon();
+        }else if (figura.equals(Figuras.ESTRELLA.name())){
+            return new Estrella();
         }
         return null;
     }

@@ -1,1 +1,1 @@
-public enum Figuras {Corazon, Rayo, Estrella;}
+public enum Figuras {CORAZON, RAYO, ESTRELLA;}

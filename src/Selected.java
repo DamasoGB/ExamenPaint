@@ -1,4 +1,7 @@
+import java.util.List;
+
 public interface Selected {
     public void setSelected(Rectangulo rectangulo);
-    public boolean getSelected(Point point);
+    public Figura getSelected(Point point,List<Figura> lista);
+    public Rectangulo getRectangulo();
 }
