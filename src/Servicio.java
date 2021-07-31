@@ -1,11 +1,11 @@
 public class Servicio {
     public IFigura createShape(Figura figura){
-        Figuras figuras= Figuras.CORAZON;
-        if(figuras==Figuras.RAYO){
+        Figuras figuras= Figuras.Corazon;
+        if(figuras==Figuras.Rayo){
             return figura;
-        }else if (figuras==Figuras.CORAZON){
+        }else if (figuras==Figuras.Corazon){
             return figura;
-        }else if (figuras==Figuras.ESTRELLA){
+        }else if (figuras==Figuras.Estrella){
             return figura;
         }
         return null;

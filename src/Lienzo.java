@@ -1,15 +1,17 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lienzo {
-    public void Add (IFigura figura,List<IFigura> lista, String colorFondo, String colorBordes, Point pointX, Point pointY){
-        lista.add(figura);
+    List<Figura> figuras = new ArrayList<Figura>();
+
+    public void Add (Figura figura, Rectangulo rectangulo){
+        figuras.add(figura);
         
-        figura.setColorFondo(colorFondo);
-        figura.setColorBordes(colorBordes);
+        IFigura ifigura = figura;
+        ifigura.setColorFondo("Blanco");
+        ifigura.setColorBordes("Negro");
         
         Selected figuraSelected = (Figura) figura; 
-        Rectangulo rectangulo = new Rectangulo(pointX, pointY);
         figuraSelected.setSelected(rectangulo);
-        
     }
 }
