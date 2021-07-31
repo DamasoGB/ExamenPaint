@@ -18,7 +18,8 @@ public class App {
         lienzo.Add(figura3,  new Rectangulo(new Point(23, 12),new Point(35, 68)));
         figura3.setColorBordes("Amarillo");
 
-        Figura figuraSeleccionada = figura1.getSelected(new Point(20, 62),lienzo.figuras);
+        Point puntero = new Point(20, 62);
+        Figura figuraSeleccionada = figura1.getSelected(puntero,lienzo.figuras);
 
         
         System.out.println("Figura seleccionada: "+figuraSeleccionada.getForma()+"\nColor Fondo: "+figuraSeleccionada.getColorFondo()+"\nColor Bordes: "+figuraSeleccionada.getColorBordes());
