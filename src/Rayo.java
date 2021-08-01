@@ -4,7 +4,7 @@ public class Rayo extends Figura {
     private Rectangulo rectangulo;
     
     public void draw(Figura figura) {
-        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes());
+        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes()+"\n");
     }
 
     

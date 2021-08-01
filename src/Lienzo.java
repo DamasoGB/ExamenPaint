@@ -15,6 +15,7 @@ public class Lienzo {
         figuraSelected.setSelected(rectangulo);
         
         figuras.add(figura);
+        System.out.println("Figura creada: ");
         figura.draw(figura);
     }
 }

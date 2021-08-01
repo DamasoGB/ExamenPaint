@@ -22,7 +22,7 @@ public class Corazon extends Figura {
 
     
     public void draw(Figura figura) {
-        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes());
+        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes()+"\n");
     }
     
     public Rectangulo getRectangulo(){

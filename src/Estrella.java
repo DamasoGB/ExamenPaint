@@ -4,7 +4,7 @@ public class Estrella extends Figura{
     public Rectangulo rectangulo;
     
     public void draw(Figura figura) {
-        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes());
+        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes()+"\n");
     }
 
     
