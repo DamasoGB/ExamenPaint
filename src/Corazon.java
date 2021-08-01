@@ -15,14 +15,14 @@ public class Corazon extends Figura {
                 figuraSelected=figuras;
             }
         }
-        
+        System.out.println("Figura seleccionada: ");
+        draw((Figura)figuraSelected);
         return (Figura)figuraSelected;
     }
 
     
-    public void draw() {
-        //TODO: Este metodo pinta la figura en el lienzo
-        
+    public void draw(Figura figura) {
+        System.out.println("Figura: "+figura.getForma()+"\nColor Fondo: "+figura.getColorFondo()+"\nColor Bordes: "+figura.getColorBordes());
     }
     
     public Rectangulo getRectangulo(){

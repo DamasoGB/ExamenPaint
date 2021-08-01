@@ -6,5 +6,5 @@ public interface IFigura {
     public void setForma(String forma);
     public String getForma();
 
-    public void draw();
+    public void draw(Figura figura);
 }
