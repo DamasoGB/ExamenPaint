@@ -23,5 +23,8 @@ public class App {
 
         
         System.out.println("Figura seleccionada: "+figuraSeleccionada.getForma()+"\nColor Fondo: "+figuraSeleccionada.getColorFondo()+"\nColor Bordes: "+figuraSeleccionada.getColorBordes());
+        figuraSeleccionada.setColorBordes("Rosa");
+        figuraSeleccionada.setColorFondo("Verde");
+        System.out.println("Cambios: Color Fondo: "+figuraSeleccionada.getColorFondo()+" Color Bordes: "+figuraSeleccionada.getColorBordes());
     }
 }
